@@ -1,4 +1,4 @@
-
+//SETS THE CAMERA AND SCENE
 function main() {
   const canvas = document.querySelector('#c');
   const renderer = new THREE.WebGLRenderer({canvas});
@@ -93,7 +93,7 @@ function main() {
 
 
 
-		//if it needs to resize
+    //IF IT NEEDS TO RESIZE
     if (resizeRendererToDisplaySize(renderer)) {
       const canvas = renderer.domElement;
       camera.aspect = canvas.clientWidth / canvas.clientHeight;
@@ -104,7 +104,7 @@ function main() {
     ;
     
     
-    
+    //CUBE ANIMATION
     cubes.forEach((cube, ndx) => {
       const speed = 1 + ndx * .1;
       const rot = time * speed;
@@ -113,7 +113,7 @@ function main() {
 
 	
 
-
+    //RENDERS GRAPHIC
     renderer.render(scene, camera);
 
 		

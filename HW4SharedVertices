@@ -133,5 +133,6 @@ main();
 
 //used: https://r105.threejsfundamentals.org/threejs/lessons/threejs-custom-geometry.html for resource
 //html:  <script src="https://r105.threejsfundamentals.org/threejs/resources/threejs/r105/three.min.js"></script>
-//css: body  margin: 0;} #c {width: 100vw;height: 100vh;display: block;}
+//css: body  margin: 0;} #c {width: 100vw;height: 100vh;display: block;}\
+//colaborated with Ben Risett
 

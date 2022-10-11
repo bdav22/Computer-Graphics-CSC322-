@@ -1,12 +1,3 @@
-// Three.js - Custom Geometry - Cube
-// 
-
-  'use strict';
-
-
-
-
-/* global THREE */
 
 function main() {
   const canvas = document.querySelector('#c');
@@ -28,7 +19,10 @@ function main() {
     light.position.set(-1, 2, 4);
     scene.add(light);
   }
-
+  
+  
+  
+  //SHARED VERTICES APPROACH
   const geometry = new THREE.Geometry();
   geometry.vertices.push(
     new THREE.Vector3(-1, -1,  1),  // 0
@@ -41,16 +35,7 @@ function main() {
     new THREE.Vector3( 1,  1, -1),  // 7
   );
 
-  /*
-       6----7
-      /|   /|
-     2----3 |
-     | |  | |
-     | 4--|-5
-     |/   |/
-     0----1
-  */
-
+  
   geometry.faces.push(
      // front
      new THREE.Face3(0, 3, 2),
@@ -143,3 +128,7 @@ function main() {
 
 
 main();
+
+
+
+//used: https://r105.threejsfundamentals.org/threejs/lessons/threejs-custom-geometry.html for resource
